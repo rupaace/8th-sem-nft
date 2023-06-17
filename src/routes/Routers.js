@@ -9,6 +9,7 @@ import Contact from "../pages/Contact";
 
 import Wallet from "../pages/Wallet";
 import NftDetails from "../pages/NftDetails";
+import NFTHistoryPage from "../pages/History";
 
 const Routers = () => {
   return (
@@ -19,6 +20,7 @@ const Routers = () => {
       <Route path="/create" element={<Create />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/wallet" element={<Wallet />} />
+      <Route path="/history" element={<NFTHistoryPage />} />
       <Route path="/market/:id" element={<NftDetails />} />
     </Routes>
   );

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-import "./nft-card.css";
+import "./trending.css";
 import Modal from "../Modal/Modal";
 
-const NftCard = (props) => {
+const Trending = (props) => {
   const { id, creatorImg, imgUrl } = props.item;
   const [nftData, setNftData] = useState(null);
   const [currentBid, setCurrentBid] = useState(0);
@@ -87,4 +87,4 @@ const NftCard = (props) => {
   );
 };
 
-export default NftCard;
+export default Trending;
